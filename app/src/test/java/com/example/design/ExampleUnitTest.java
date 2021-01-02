@@ -21,6 +21,6 @@ public class ExampleUnitTest {
     public void addition_isCorrect() {
         logv("this is a test!");
         Test_2_1 test_2_1 = new Test_2_1();
-        test_2_1.test_2_1();
+        test_2_1.testGenericStack();
     }
 }
