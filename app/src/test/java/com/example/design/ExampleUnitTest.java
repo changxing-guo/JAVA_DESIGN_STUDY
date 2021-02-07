@@ -12,15 +12,22 @@ import static com.example.design.Util.logv;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-
-/*
-    sytud1 : 泛型
- */
 public class ExampleUnitTest {
-    @Test
-    public void addition_isCorrect() {
+    /*
+            sytud1 : 泛型
+         */
+    public void test1()
+    {
         logv("this is a test!");
         Test_2_1 test_2_1 = new Test_2_1();
         test_2_1.testGenericStack();
     }
+
+
+    @Test
+    public void addition_isCorrect() {
+        //test1();
+    }
+
+
 }
