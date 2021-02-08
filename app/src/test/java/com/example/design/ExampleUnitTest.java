@@ -1,5 +1,6 @@
 package com.example.design;
 
+import com.example.design.Singleton.Singleton3;
 import com.example.design.study1.ChangeDate;
 import com.example.design.study1.Student;
 import com.example.design.study1.Test_2_1;
@@ -98,9 +99,15 @@ public class ExampleUnitTest {
         jack.callHelp(a, b);
     }
 
+    //测试单例模式
+    public void testSingle() {
+        Singleton3 single3 = Singleton3.getInstance(null);
+        single3.about();
+    }
+
     @Test
     public void addition_isCorrect() {
-        testSt2(5, 10);
+        testSingle();
     }
 
 
