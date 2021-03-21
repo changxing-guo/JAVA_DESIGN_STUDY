@@ -1,7 +1,6 @@
 package com.example.design.study1;
 
 import java.util.ArrayList;
-import static com.example.design.Util.logv;
 
 public class Test_2_1
 {
@@ -67,7 +66,7 @@ public class Test_2_1
         ArrayList<Integer> a2= new ArrayList<Integer>();
         a2.add(5); // 但是可以添加一个int的值，可以自动打包
         int b2 = a2.get(0);     // 取出来的值是integer会自动解包为int
-        logv(b2);
+        //Dlogv(b2);
     }
 
     /*
@@ -113,7 +112,7 @@ public class Test_2_1
         // 定义泛型方法
         public <E> void print(E[] list) {
             for (int i=0; i<list.length; i++) {
-                logv(list[i] + " ");
+                //logv(list[i] + " ");
             }
         }
 
@@ -131,12 +130,12 @@ public class Test_2_1
         g1.push("2222222222");
         g1.push("3333333333");
 
-        logv(" size = " + g1.getSize());
+        /*logv(" size = " + g1.getSize());
         logv(g1.pop());
         logv(g1.pop());
         logv(g1.pop());
         logv(" size = " + g1.getSize());
-
+*/
         // 测试泛型方法
         GenericStack g2 = new GenericStack();
         Integer[] integer = {1, 2, 3, 4, 5, 6};

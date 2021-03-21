@@ -7,7 +7,9 @@ import com.example.design.study1.Test_2_1;
 
 import org.junit.Test;
 
-import static com.example.design.Util.logv;
+import java.util.Scanner;
+
+//import static com.example.design.Util.logv;
 
 
 /**
@@ -20,7 +22,7 @@ public class ExampleUnitTest {
             sytud1 : 泛型
          */
     public void test1() {
-        logv("this is a test!");
+        //logv("this is a test!");
         Test_2_1 test_2_1 = new Test_2_1();
         test_2_1.testGenericStack();
     }
@@ -105,9 +107,41 @@ public class ExampleUnitTest {
         single3.about();
     }
 
+    //题目1：输入三个整数x,y,z，请把这三个数由小到大输出。
+    public void  Max()
+    {
+        @SuppressWarnings("resource")
+        Scanner scanner = new Scanner(System.in);
+        while (true) {
+            int tmp;
+            int a = scanner.nextInt();
+            int b = scanner.nextInt();
+            int c = scanner.nextInt();
+
+            if (a>b) {
+                tmp = a;
+                a = b;
+                b = tmp;
+            }
+            if (a>c) {
+                tmp = c;
+                a = c;
+                c = a;
+            }
+            if (b>c) {
+                tmp = b;
+                b = c;
+                c = tmp;
+            }
+
+            System.out.println(" x = " + a + ", y = " + b + ", z = " + c);
+        }
+    }
+
     @Test
     public void addition_isCorrect() {
-        testSingle();
+        System.out.println("this is a test");
+        Max();
     }
 
 
